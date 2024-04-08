@@ -40,5 +40,5 @@ jobs:
         run: |
           rm -rf .git*
           aws s3 rm s3://${{ env.STAGE_AWS_S3_BUCKET_NAME }} --recursive
-          aws s3 cp index.html s3://${{ env.STAGE_AWS_S3_BUCKET_NAME }}/
+          aws s3 cp * s3://${{ env.STAGE_AWS_S3_BUCKET_NAME }}/
           aws s3 cp assets s3://${{ env.STAGE_AWS_S3_BUCKET_NAME }}/assets/ --recursive
