@@ -705,6 +705,7 @@ img {
   a
   i {
   height: 16px;
+  transform: rotate(45deg);
 }
 .header-area
   .navbar-wrapper
@@ -934,6 +935,20 @@ img {
   max-width: 612px;
   margin: 0 auto 45px auto;
 }
+.hero-section-wrap .hero-section-content-wrap .bg-shape {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  pointer-events: none;
+}
+.hero-section-wrap .hero-section-content-wrap .bg-shape2 {
+  position: absolute;
+  right: 0;
+  top: 110px;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .mac-btns-wrap {
   margin-bottom: 35px;
 }

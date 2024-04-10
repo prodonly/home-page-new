@@ -824,6 +824,11 @@
     visibility: visible;
     opacity: 1;
   }
+  .header-area .navbar-wrapper ul > li.active > .mega-menu {
+    max-height: 2000px;
+    opacity: 1;
+    visibility: visible;
+  }
   .header-area .navbar-wrapper > ul > li:last-child {
     border-bottom: none;
     padding-bottom: 0;
