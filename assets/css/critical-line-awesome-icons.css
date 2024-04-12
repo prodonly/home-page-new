@@ -1,18 +1,19 @@
 @font-face {
-  font-family: "Line Awesome Free";
   font-display: swap;
+  font-family: "Line Awesome Free";
   font-weight: 900;
   src: url("../fonts/la-solid-900.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Line Awesome Brands";
   font-display: swap;
+  font-family: "Line Awesome Brands";
+  font-weight: 400;
   src: url("../fonts/la-brands-400.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Line Awesome Free";
   font-display: swap;
-  font-weight: 900;
+  font-family: "Line Awesome Free";
+  font-weight: 400;
   src: url("../fonts/la-regular-400.woff2") format("woff2");
 }
 
@@ -29,6 +30,19 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
+}
+
+.la {
+  font-family: "Line Awesome Free";
+  font-weight: 400;
+}
+.las {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+}
+.lab {
+  font-family: "Line Awesome Brand";
+  font-weight: 400;
 }
 
 .la-times::before {
@@ -59,7 +73,7 @@
   font-family: "Line Awesome Brands";
   font-weight: 400;
 }
-.la-twitter:before {
+.la-twitter::before {
   content: "\f099";
 }
 
@@ -68,7 +82,7 @@
   font-weight: 400;
 }
 
-.la-instagram:before {
+.la-instagram::before {
   content: "\f16d";
 }
 
@@ -76,10 +90,10 @@
   font-family: "Line Awesome Brands";
   font-weight: 400;
 }
-.la-linkedin:before {
+.la-linkedin::before {
   content: "\f08c";
 }
 
-.la-arrow-up:before {
+.la-arrow-up::before {
   content: "\f062";
 }

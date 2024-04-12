@@ -16,23 +16,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&family=Syne:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      rel="stylesheet preload"
     />
 
     <!-- ========== Start Stylesheet ========== -->
 
     <!-- loads used css first to save time -->
+
+    <link
+      rel="preload"
+      href="./assets/fonts/la-regular-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/la-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/la-brands-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <link
       rel="stylesheet"
       href="./assets/css/critical-line-awesome-icons.css"
     />
 
-    <link
+    <!-- fetch rest of icon file later if needed-->
+    <!-- <link
       rel="preload"
-      href="assets/css/line-awesome.min.css"
+      href="./assets/css/line-awesome.min.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
-    />
+    /> -->
+
     <noscript
       ><link rel="stylesheet" href="assets/css/line-awesome.min.css"
     /></noscript>
@@ -554,7 +579,7 @@
           <div class="custom-container">
             <div class="hero-section-content text-center">
               <h5 class="section-subtitle">ACCELERATED GROWTH</h5>
-              <h1 class="section-title fade-in">
+              <h1 class="section-title" style="opacity: 0">
                 Empowering business with modern rules and insights
               </h1>
               <p>
@@ -2057,5 +2082,21 @@
     <!-- <script src="./assets/js/form2.js"></script> -->
     <script src="./assets/js/subscribe-form.js" async></script>
     <!-- <script src="./assets/js/theme-worldmap.js"></script> -->
+    <script>
+      const title = document.querySelector(
+        ".hero-section-content .section-title"
+      );
+      
+      // Check if the screen not mobile
+      if (window.innerWidth > 768) {
+        console.log("window.innerWidth > 768");
+        if (title) {
+          title.style.transition = "opacity 0.5s linear";
+          title.style.opacity = 1;
+        }
+      } else {
+        title.style.opacity = 1;
+      }
+    </script>
   </body>
 </html>

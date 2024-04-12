@@ -666,6 +666,7 @@
   .section-title {
     font-size: 45px;
   }
+
   .section-header p {
     font-size: 15px;
     line-height: 21px;
@@ -953,6 +954,7 @@
     font-size: 64px;
     line-height: 1.1;
   }
+
   /* .news2-sticky.news2-card img {
         max-width: 450px;
     } */
@@ -1346,6 +1348,10 @@
   }
   .footer-area .footer-top .left-content .subscribe-box input {
     width: auto;
+  }
+  /* hide the big hero section images on mobile */
+  .hero-section-wrap .hero-section-content-wrap img {
+    display: none;
   }
 }
 @media (max-width: 425px) {

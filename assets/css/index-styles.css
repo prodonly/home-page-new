@@ -279,7 +279,7 @@ img {
 
 /*fade-in Animation */
 .fade-in {
-  animation: fadeIn 1s cubic-bezier(0.97, 0.01, 0.92, 1);
+  opacity: 1;
 }
 
 /*bounce-in Animation */
