@@ -279,7 +279,7 @@ img {
 
 /*fade-in Animation */
 .fade-in {
-  opacity: 1;
+  animation: fadeIn 1s linear;
 }
 
 /*bounce-in Animation */
@@ -924,7 +924,7 @@ img {
 .hero-section-wrap .hero-section-content-wrap .hero-section-content h1 {
   font-size: 94px;
   line-height: 88px;
-  letter-spacing: -2px;
+  /* letter-spacing: -2px; */
   font-weight: 500;
   margin-bottom: 30px;
 }
@@ -1961,4 +1961,9 @@ img {
 }
 .copyright-area p a:hover {
   color: #ffffff;
+}
+
+.invisible {
+  display: none !important;
+  content-visibility: hidden;
 }
